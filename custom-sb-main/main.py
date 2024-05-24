@@ -853,13 +853,27 @@ def main():
         ["CAWZE DCT SIRIC DCT NIGIT DCT OCK", 14000],
         ["CAWZE DCT SIRIC DCT NIGIT DCT OCK", 14000],
     ])
-    stdArrival(masterCallsign, controllerSock, "EGNX", 90, [
+    stdArrival(masterCallsign, controllerSock, "EGNX", 120, [
        ["HAZEL L620 SAM Q41 SILVA M605 DTY", 17000]
        ["AMTAP DCT ROVLA UT256 DCS UL612 CROFT", 17000] 
        ["ADHAV P70 AGCAT Q63 ZIPWE DCT HAWFA L607 NUCHU DCT CPT M183 SILVA M605 DTY", 19000]
        ["ADHAV P70 AGCAT Q63 ZIPWE L180 LEKCI P4 HAWFA L607 ALHAD DCT OCK Q3 HEMEL", 17000]
 
     ])
+    stdArrival(masterCallsign, controllerSock, "EGSS", 95, [  # SS arrivals
+       ["BOMBO DCT BKY DCT BUSTA DCT LOREL", 9000],
+       ["BPK DCT BKY DCT BUSTA DCT LOREL", 9000],
+       ["LOFFO DCT ABBOT", 9000],
+       ["CLN DCT ABBOT", 9000],
+       ["LAPRA DCT ABBOT", 9000]
+     ])
+
+    stdArrival(masterCallsign, controllerSock, "EGGW", 105, [  # GW arrivals
+       ["OXDUF DCT COCCU DCT JUMZI DCT ZAGZO", 9000],
+       ["WOBUN DCT EDCOX DCT JUMZI DCT ZAGZO", 9000],
+       ["LOFFO DCT ABBOT", 9000],
+       ["CLN DCT ABBOT", 9000],
+     ])
 
 
     stdDeparture(masterCallsign, controllerSock, "EGKK", 240, [  # KK departures
@@ -886,12 +900,18 @@ def main():
         ["TNT2N/27 TNT N57 POL UN601 INPIP", "EGPH"]
     ])
     stdDeparture(masterCallsign, controllerSock, "EGSS", 95, [ #SS Departures
-        ["UTAVA Q75 BUZAD T420 TNT Q4 WAL L10 PENIL L70 BAGSO", "EIDW"],
-        ["UTAVA Q75 BUZAD T420 TNT N57 DENBY DCT LBA", "EGNM"],
-        ["UTAVA Q75 BUZAD T420 ELVOS DCT QUISHI DCT DAYNE", "EGCC"]
-        ["CLN P44 RATLO M197 REDFA", "EHAM"]
+        ["UTAVA1R/22 UTAVA Q75 BUZAD T420 TNT Q4 WAL L10 PENIL L70 BAGSO", "EIDW"],
+        ["UTAVA1R/22 UTAVA Q75 BUZAD T420 TNT N57 DENBY DCT LBA", "EGNM"],
+        ["UTAVA1R/22 UTAVA Q75 BUZAD T420 ELVOS DCT QUISHI DCT DAYNE", "EGCC"]
+        ["CLN2E/22 CLN P44 RATLO M197 REDFA", "EHAM"]
+        ["DET2R/22 DET M604 LYD M189 WAFFU UM605 XIDIL", "LFPG"],
+        ["NUGBO1R/22 NUGBO M183 SILVA P86 SAWPE", "EGGD"]
     ])
-    stdDeparture(masterCallsign, controllerSock, "EGGW")
+    stdDeparture(masterCallsign, controllerSock, "EGGW",105,[
+        ["OLNEY T420 TNT Q4 WAL L10 PENIL L28 LELDO M145 BAGSO", "EIDW"],
+        ["DET3Y/25 DET DCT TIMBA", "EGKK"],
+        ["RODNI1B/25 RODNI N27 ICTAM", "EGGD"],
+    ])
     
     # DEPARTURES
     # util.PausableTimer(1, spawnEveryNSeconds, args=(240, masterCallsign, controllerSock, "DEP", ACTIVE_AERODROME), kwargs={"flightPlan": FlightPlan("I", "B738", 250, ACTIVE_AERODROME, 1130, 1130, 25000, "EHAM", Route("BPK7G/27L BPK Q295 BRAIN M197 REDFA"))})
