@@ -76,13 +76,9 @@ OTHER_CONTROLLERS = [
     # ("EGKK_APP", "26825"),
     # ("EGLL_N_APP", "19730"),
 
-    ("LON_W_CTR", "26080"),
-    ("LON_E_CTR", "18480"),
-    ("LON_M_CTR", "20025"),
-    ("LON_D_CTR", "34905"),
     ("LON_NW_CTR", "35580"),
     ("LON_NE_CTR", "28130"),
-    ("LON_S_CTR", "29430"),
+    ("LON_CTR", "27830"),
 
     # ("LTC_E_CTR", "21230"),
 # #    ("LTC_M_CTR", "21030"),
