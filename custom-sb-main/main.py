@@ -928,18 +928,26 @@ def main():
     # ])
 
      #NX
-    stdArrival(masterCallsign, controllerSock, "EGNX", 100, [
-         ["WELIN DCT PIGOT", 10000],
-         ["XAPOS DCT ROKUP", 8000]
+    # stdArrival(masterCallsign, controllerSock, "EGNX", 100, [
+    #      ["WELIN DCT PIGOT", 10000,"EGNX_APP"],
+    #      ["XAPOS DCT ROKUP", 8000,"EGNX_APP"]
+    # ])
+
+    # stdDeparture(masterCallsign, controllerSock, "EGNX", 100, [
+    #      ["DTY3N/27 DTY", "EGKK"],
+    #     #  ["POL3/27 POL", "EGCC"],
+    #      ["TNT2N/27 TNT", "EGCC"]
+    #  ])
+#CC
+    stdDeparture(masterCallsign, controllerSock, "EGCC", 120 [
+        ["SANBA1R/23R SANBA N859 HON", "EGLL"],
+        ["EKLAD1R/23R EKLAD Y53 WAL L10 PENIL M144 BAGSO", "EIDW"]
     ])
-
-    stdDeparture(masterCallsign, controllerSock, "EGNX", 100, [
-         ["DTY3N/27 DTY", "EGKK"],
-        #  ["POL3/27 POL", "EGCC"],
-         ["TNT2N/27 TNT", "EGCC"]
-     ])
-
-
+    stdArrival(masterCallsign, controllerSock, "EGCC", 100[
+        ["ELVOS1M/23R ELVOS TNT QUSHI DAYNE", 20000, "EGCC_S_APP"]
+        ["LAKEY1M/23R LAKEY DIZZE ROSUN", 20000, "EGCC_S_APP"]
+        ["MALUD1M/23R MALUD WAL MIRSI", 17000, "EGCC_S_APP"]
+    ])
     # LC
     # stdArrival(masterCallsign, controllerSock, "EGLC", 110, [
     #     ["RATLO DCT JACKO", 9000, "THAMES_APP"],
