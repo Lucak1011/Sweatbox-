@@ -939,7 +939,7 @@ def main():
     #      ["TNT2N/27 TNT", "EGCC"]
     #  ])
 #CC
-    stdDeparture(masterCallsign, controllerSock, "EGCC", 120 [
+    stdDeparture(masterCallsign, controllerSock, "EGCC", 120, [
         ["SANBA1R/23R SANBA N859 HON", "EGLL"],
         ["EKLAD1R/23R EKLAD Y53 WAL L10 PENIL M144 BAGSO", "EIDW"]
     ])
