@@ -944,9 +944,9 @@ def main():
         ["EKLAD1R/23R EKLAD Y53 WAL L10 PENIL M144 BAGSO", "EIDW"],
     ])
     stdArrival(masterCallsign, controllerSock, "EGCC", 100, [
-        ["ELVOS1M/23R ELVOS TNT QUSHI DAYNE", 20000, "EGCC_S_APP"],
-        ["LAKEY1M/23R LAKEY DIZZE ROSUN", 20000, "EGCC_S_APP"],
-        ["MALUD1M/23R MALUD WAL MIRSI", 17000, "EGCC_S_APP"],
+        ["ELVOS TNT QUSHI DAYNE", 20000, "EGCC_S_APP"],
+        ["LAKEY DIZZE ROSUN", 20000, "EGCC_S_APP"],
+        ["MALUD WAL MIRSI", 17000, "EGCC_S_APP"],
     ])
     # LC
     # stdArrival(masterCallsign, controllerSock, "EGLC", 110, [
